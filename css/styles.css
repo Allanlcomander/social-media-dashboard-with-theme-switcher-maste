@@ -4,7 +4,7 @@
 }
 
 body{
-    padding: 0%;
+    padding: 0;
     margin: 0;
 }
 
@@ -19,6 +19,7 @@ body{
   .row {
     width: 80%;
     margin: 0 auto;
+    
   }
   
   .row::after {
@@ -29,7 +30,7 @@ body{
   
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
-  .col-3 { width: 25%;}
+  .col-3 { width: 21%;}
   .col-4 {width: 33.33%;}
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
@@ -39,14 +40,23 @@ body{
   .col-10 {width: 83.33%;}
   .col-11 { width: 91.66%;}
   .col-12 {width: 100%;}
-
+  
+ /* toggle button */
   .switch {
-    position: relative;
+    
+    position: absolute;
+    top: 45px;
+    right: 0;
     display: inline-block;
     width: 60px;
     height: 34px;
   }
   
+  .toggle-text::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   .switch input { 
     opacity: 0;
     width: 0;
@@ -96,4 +106,54 @@ body{
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  header .row{
+    position: relative;
+    
+  }
+ 
+  .toggle-text{
+     position: absolute;
+    
+    top: 40px;
+    right: 80px;
+  }
+
+  .total-follows{
+    position: relative;
+    bottom: 20px;
+    margin: 0;
+  }
+
+  /*  first section */
+  .first-stats{
+   margin: 20px;
+   position: relative;
+   bottom: 40px;
+   border-top: 5px solid;
+   border-radius: 5px;
+  }
+  .facebook{
+    border-top-color:  hsl(195, 100%, 50%);
+  }
+  .twitter{
+    border-top-color: hsl(203, 89%, 53%);
+  }
+
+  .instagram{
+    border-top: linear hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  }
+
+
+
+
+  /* mobile views */
+
+  @media (min-width: 320px) and (max-width:425px){
+    [class*="col-"] {
+      width: 100%;
+      padding: 15px;
+       border: 1px #fff345 solid;
+    }
   }
