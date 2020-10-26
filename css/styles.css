@@ -16,7 +16,7 @@ body{
 [class*="col-"] {
     float: left;
     padding: 15px;
-     border: 1px #ffff34 solid;
+     /* border: 1px #ffff34 solid; */
   }
   
   .row {
@@ -92,7 +92,7 @@ body{
 
   input:checked + .slider {
     background-image: none;
-    background-color:hsl(228, 12%, 44%)
+    background-color:hsl(230, 22%, 74%);
   } 
   
   /* input:focus + .slider {
@@ -154,6 +154,11 @@ body{
    background-color: hsl(227, 47%, 96%);
    text-align: center;
   }
+  .first-stats:hover{
+    cursor: pointer;
+    background-color: hsl(230, 22%, 74%);
+    
+  }
   .facebook{
     border-top-color:  hsl(195, 100%, 50%);
   }
@@ -214,13 +219,19 @@ body{
   bottom: 120px;
 }
 .second-section h1{
-  color: hsl(230, 17%, 14%);
+  color: hsl(228, 12%, 44%);
   font-weight: 700;
 }
   .second-stats{
-    margin: 20px;
+     margin: 20px;
      background-color: hsl(227, 47%, 96%);
      border-radius: 6px;
+  }
+
+  .second-stats:hover{
+    cursor: pointer;
+    background-color: hsl(230, 22%, 74%)
+
   }
 
   .second-section p{
