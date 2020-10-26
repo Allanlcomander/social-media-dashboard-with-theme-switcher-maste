@@ -196,13 +196,14 @@ body{
     right: 10px
   }
 
-  .ratings{
+  .up-ratings{
     color: hsl(163, 72%, 41%);
     font-weight: 700;
     
   }
-  .youtube-rating{
+  .down-rating{
     color: hsl(356, 69%, 56%);
+    font-weight: 700;
   }
 
 .second-section h1{
@@ -212,12 +213,48 @@ body{
   position: relative;
   bottom: 120px;
 }
+.second-section h1{
+  color: hsl(230, 17%, 14%);
+  font-weight: 700;
+}
   .second-stats{
     margin: 20px;
      background-color: hsl(227, 47%, 96%);
      border-radius: 6px;
   }
 
+  .second-section p{
+    font-weight: 700;
+    
+  }
+
+  .overview .second-stats{
+    position: relative;
+  }
+  
+  .icons-bottom{
+    position: absolute;
+    right: 20px;
+
+  }
+  .overview-titles{
+    color: hsl(228, 12%, 44%);
+  }
+  .overview-percentages{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+    font-weight: 700;
+  }
+  .overview-totals{
+    position: relative;
+    top: 10px;
+    color: hsl(230, 17%, 14%);
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
 
   /* mobile views */
 
