@@ -73,7 +73,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+     background-image: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -121,7 +121,7 @@ body{
      bottom: 10px;
      
   }
-  header h1{
+  .heading-top{
     color: hsl(230, 17%, 14%);
   }
   
@@ -168,6 +168,7 @@ body{
 
   .instagram{
     border-image:linear-gradient( to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1 0 0 0;
+   
     
     
   }
@@ -267,12 +268,31 @@ body{
     padding: 0;
   }
 
+  
   /* mobile views */
 
   @media (min-width: 320px) and (max-width:425px){
     [class*="col-"] {
       width: 100%;
       padding: 15px;
-       border: 1px #fff345 solid;
+      border: 1px #fff345 solid;
     }
+    .row{
+      width: 90%;
+    }
+    .heading-top{
+      font-size: 20px;
+    }
+    .first-stats,.second-stats{
+      margin: 10px 0;
+    }
+
+    .first-stats{
+      position: relative;
+      top: -100px;
+    }
+    .second-section{
+      margin-top: 60px;
+    }
+
   }
