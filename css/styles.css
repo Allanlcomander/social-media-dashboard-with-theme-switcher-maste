@@ -21,7 +21,7 @@ body{
   
   .row {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
     
   }
   
@@ -33,7 +33,7 @@ body{
   
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
-  .col-3 { width: 21%;}
+  .col-3 { width: 22%;}
   .col-4 {width: 33.33%;}
   .col-5 {width: 41.66%;}
   .col-6 {width: 50%;}
@@ -124,6 +124,10 @@ body{
   .heading-top{
     color: hsl(230, 17%, 14%);
   }
+
+  .line-top{
+    display: none;
+  }
   
  
  
@@ -146,7 +150,7 @@ body{
 
   /*  first section */
   .first-stats{
-   margin: 20px;
+   margin: 16px;
    position: relative;
    bottom: 120px;
    border-top: 3px solid;
@@ -215,16 +219,16 @@ body{
 .second-section h1{
   margin: 20px;
 }
-.second-section{
+/* .second-section{
   position: relative;
   bottom: 120px;
-}
+} */
 .second-section h1{
   color: hsl(228, 12%, 44%);
   font-weight: 700;
 }
   .second-stats{
-     margin: 20px;
+     margin: 16px;
      background-color: hsl(227, 47%, 96%);
      border-radius: 6px;
   }
@@ -275,24 +279,116 @@ body{
     [class*="col-"] {
       width: 100%;
       padding: 15px;
-      border: 1px #fff345 solid;
+      /* border: 1px #fff345 solid; */
     }
     .row{
       width: 90%;
     }
     .heading-top{
-      font-size: 20px;
+      font-size: 25px;
     }
+
+    .total-follows{
+      top: -12px;
+    }
+
+    .line-top{
+      display: block;
+      width: 100%;
+      color: hsl(228, 12%, 44%);
+    }
+    .toggle-text{
+      top: 118px;
+      left: 14px;
+    }
+    .switch{
+      top: 132px;
+      right: 14px;
+    }
+
     .first-stats,.second-stats{
       margin: 10px 0;
     }
 
     .first-stats{
       position: relative;
-      top: -100px;
+      top: -60px;
     }
     .second-section{
-      margin-top: 60px;
+      margin-top: 80px;
     }
 
+  }
+  @media (width: 768px){
+    [class*="col-"] {
+      padding: 15px;
+      border: 1px #fff345 solid; 
+    }
+    .col-3 { 
+      width: 40%;
+      
+    
+    }
+    .row{
+      width: 100%;
+    }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    
+ 
+     .first-stats, .second-stats{
+       left: 44px;   
+    }
+
+  .first-stats{
+    bottom: 50px;
+  } 
+
+  .second-section{
+    position: relative;
+    bottom: 180px;
+  }
+
+  .heading-top{
+    font-size: 30px;
+  }
+  .switch{
+  
+    top: 43px;
+  }
+
+  .toggle-text{
+    top: 30px;
+  }
+    .youtube{
+      position: relative;
+      bottom: 276px;
+    } 
+  }
+
+  @media(width:1024px){
+    .col-3 { 
+      width: 21%;
+      
+    
+    }
+
+    .switch{
+  
+      top: 43px;
+    }
+  
+    .toggle-text{
+      top: 32px;
+    }
+  }
+
+  @media(width:320px){
+    .heading-top{
+      font-size: 22px;
+    }
   }
