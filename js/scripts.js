@@ -1,17 +1,10 @@
-// var darkMode =function() {
-//     var element = document.body;
-//    element.classList.toggle("dark-mode");
-// };
-
-// var darkModee = function () {
-//     var element = document.body;
-//     element.classList.toggle("header");
-// }
 
 
+var toggleButton = document.querySelector("#button");
 
-// $(document).ready(function() {
-//     $(".button").click(function() {
-//        $("body").addClass("darkMode"); 
-//     });
-// });
+// Listen for a click on the button
+toggleButton.addEventListener('click', function() {
+    // Then toggle (add/remove) the .dark-theme class to the body
+    document.body.classList.toggle('dark-theme');  
+  });
+

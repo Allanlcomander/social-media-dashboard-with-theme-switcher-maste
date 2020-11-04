@@ -1,15 +1,9 @@
-// var darkMode =function() {
-//     var element = document.body;
-//    element.classList.toggle("dark-mode");
-// };
-// var darkModee = function () {
-//     var element = document.body;
-//     element.classList.toggle("header");
-// }
-// $(document).ready(function() {
-//     $(".button").click(function() {
-//        $("body").addClass("darkMode"); 
-//     });
-// });
 "use strict";
+
+var toggleButton = document.querySelector("#button"); // Listen for a click on the button
+
+toggleButton.addEventListener('click', function () {
+  // Then toggle (add/remove) the .dark-theme class to the body
+  document.body.classList.toggle('dark-theme');
+});
 //# sourceMappingURL=scripts.dev.js.map

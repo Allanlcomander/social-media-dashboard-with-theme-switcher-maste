@@ -8,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
-  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- <link rel="stylesheet" href="css/darkTheme.css" id="dark-theme"> -->
+  <link rel="stylesheet" href="css/styles.css" id="light-theme">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,7 +18,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="light-theme || dark-theme">
 
   <header class="header">
     <div class="row">
@@ -29,7 +31,7 @@
          <!-- toggle switch -->
       <p class="toggle-text">Dark Mode</p>
       <label class="switch">
-        <input onclick="darkMode()" type="checkbox" checked>
+        <input id="button" type="checkbox">
         <span class="slider round"></span>
       </label>
       </div>
@@ -71,7 +73,7 @@
   <section class="second-section">
     
     <div class="row overview">
-      <h1>Overview - Today</h1>
+      <h1 class="overview-heading">Overview - Today</h1>
       <div class="col-3 second-stats">
         <p class="overview-titles">Page Views<span class="icons-bottom"><img src="images/icon-facebook.svg" alt="icon-facebook"></span></p>
         <p class="overview-totals">87</p>

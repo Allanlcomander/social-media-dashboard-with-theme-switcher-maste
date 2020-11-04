@@ -77,6 +77,10 @@ body{
     -webkit-transition: .4s;
     transition: .4s;
   }
+
+  body.light-theme .slider:hover{
+    background-image: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
   
   .slider:before {
     position: absolute;
@@ -223,11 +227,11 @@ body{
   position: relative;
   bottom: 120px;
 } */
-.second-section h1{
+body.light-theme .overview-heading{
   color: hsl(228, 12%, 44%);
   font-weight: 700;
 }
-  .second-stats{
+   .second-stats{
      margin: 16px;
      background-color: hsl(227, 47%, 96%);
      border-radius: 6px;
@@ -263,7 +267,7 @@ body{
     
     font-weight: 700;
   }
-  .overview-totals{
+  body.light-theme .overview-totals{
     position: relative;
     top: 10px;
     color: hsl(230, 17%, 14%);
@@ -271,6 +275,43 @@ body{
     margin: 0;
     padding: 0;
   }
+
+
+  body.dark-theme{
+    background-color: hsl(230, 17%, 14%);
+}
+
+body.dark-theme header{
+    background-color: hsl(232, 19%, 15%);
+} 
+
+body.dark-theme .heading-top{
+    color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .overview-heading{
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .first-stats{
+    background-color: hsl(228, 28%, 20%);
+}
+
+body.dark-theme .second-stats{
+  background-color: hsl(228, 28%, 20%);
+}
+
+body.dark-theme .follow-numbers{
+    color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .overview-totals{
+  color: hsl(0, 0%, 100%);
+}
+
+body.dark-theme .overview-titles,.follow-text, .names,.toggle-text,.total-follows{
+    color: hsl(228, 34%, 66%);
+}
 
   
   /* mobile views */
