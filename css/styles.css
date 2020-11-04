@@ -16,7 +16,7 @@ body{
 [class*="col-"] {
     float: left;
     padding: 15px;
-     /* border: 1px #ffff34 solid; */
+     
   }
   
   .row {
@@ -176,6 +176,7 @@ body{
 
   .instagram{
     border-image:linear-gradient( to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1 0 0 0;
+    
    
     
     
@@ -223,10 +224,7 @@ body{
 .second-section h1{
   margin: 20px;
 }
-/* .second-section{
-  position: relative;
-  bottom: 120px;
-} */
+
 body.light-theme .overview-heading{
   color: hsl(228, 12%, 44%);
   font-weight: 700;
@@ -320,7 +318,7 @@ body.dark-theme .overview-titles,.follow-text, .names,.toggle-text,.total-follow
     [class*="col-"] {
       width: 100%;
       padding: 15px;
-      /* border: 1px #fff345 solid; */
+      
     }
     .row{
       width: 90%;
@@ -363,7 +361,7 @@ body.dark-theme .overview-titles,.follow-text, .names,.toggle-text,.total-follow
   @media (width: 768px){
     [class*="col-"] {
       padding: 15px;
-      border: 1px #fff345 solid; 
+      
     }
     .col-3 { 
       width: 40%;
@@ -433,3 +431,13 @@ body.dark-theme .overview-titles,.follow-text, .names,.toggle-text,.total-follow
       font-size: 22px;
     }
   }
+
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+  body.dark-theme .attribution{
+    color: hsl(0, 0%, 100%);
+  }
+
+  body.dark-theme .attribution a { color: hsl(163, 72%, 41%) }
