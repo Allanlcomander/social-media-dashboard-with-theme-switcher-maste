@@ -5,4 +5,5 @@
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding solution fronm frontend mentor.
+Built with html css and javascript for the dark mode and light theme toggle.
 
